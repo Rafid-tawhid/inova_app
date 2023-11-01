@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:inova_app/constants.dart';
 
 import '../widgets/custom_button.dart';
-import '../widgets/otp_widgets.dart';
+import '../widgets/mobile_widgets.dart';
 
 class LauncherPage extends StatelessWidget {
   static const String routeName = '/';
@@ -24,13 +24,13 @@ class LauncherPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: MediaQuery.of(context).size.height / 7,
+                  height: MediaQuery.of(context).size.height / 8,
                 ),
                 Text(
                   'USE IT',
                   style: GoogleFonts.spaceGrotesk(
                     textStyle: const TextStyle(
-                        fontSize: 70,
+                        fontSize: 60,
                         height: 1,
                         color: myColors.green,
                         fontWeight: FontWeight.w900),
@@ -39,7 +39,7 @@ class LauncherPage extends StatelessWidget {
                 Text('AND',
                     style: GoogleFonts.spaceGrotesk(
                       textStyle: const TextStyle(
-                          fontSize: 70,
+                          fontSize: 60,
                           height: 1,
                           color: myColors.darkGreen,
                           fontWeight: FontWeight.w900),
@@ -47,7 +47,7 @@ class LauncherPage extends StatelessWidget {
                 Text('REPEAT!',
                     style: GoogleFonts.spaceGrotesk(
                       textStyle: const TextStyle(
-                          fontSize: 70,
+                          fontSize: 60,
                           height: 1,
                           color: myColors.green,
                           fontWeight: FontWeight.w900),
@@ -125,9 +125,10 @@ class LauncherPage extends StatelessWidget {
                   text: 'Continue with Login',
                   onTaps: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => OtpWidgets()));
+                        MaterialPageRoute(builder: (context) => MobileNumberWidgets()));
                   },
-                )
+                ),
+                SizedBox(height: 20,)
               ],
             )
           ],

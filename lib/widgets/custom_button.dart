@@ -16,9 +16,9 @@ class CustomGreenButton extends StatelessWidget {
       },
       child: Container(
         alignment: Alignment.center,
+        height: 70,
         decoration: BoxDecoration(
             color: myColors.green, borderRadius: BorderRadius.circular(30)),
-        padding: EdgeInsets.symmetric(vertical: 34),
         width: MediaQuery.of(context).size.width,
         child: Text(
           text,
